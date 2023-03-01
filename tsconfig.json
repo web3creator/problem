@@ -3,7 +3,7 @@
     "module": "ESNext",
     "target": "es2017",
     "moduleResolution": "node",
-    "strict": true,
+    // "strict": true,
     "strictPropertyInitialization": false,
     "declaration": true,
     "declarationMap": true,

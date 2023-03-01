@@ -1,5 +1,6 @@
 import Guide from '@/components/Guide';
 import { trim } from '@/utils/format';
+import React from "react";
 import { PageContainer } from '@ant-design/pro-components';
 import { useModel } from '@umijs/max';
 import  "./opensumi/src/app";

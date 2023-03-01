@@ -37,14 +37,14 @@ export async function renderApp(opts: IClientAppOpts) {
       }
     }
   }, async function (e) {
-    await setupAppDataDir(opts.workspaceDir!);
+     await setupAppDataDir(opts.workspaceDir!);
 
     const app = new ClientApp(opts);
     app.fireOnReload = (forcedReload: boolean) => {
       window.location.reload();
     };
 
-    const targetDom = document.getElementById('main')!;
+    const targetDom = document.getElementById('root')!;
     await app.start((app) => {
       const MyApp = <div id='custom-wrapper' style={{ height: '100%', width: '100%' }}>{app}</div>;
       return new Promise((resolve) => {
